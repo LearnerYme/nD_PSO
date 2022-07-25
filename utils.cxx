@@ -126,6 +126,7 @@ class group{
         group(args* conf, Int_t npart, Int_t iter_max){
             this->conf = conf;
             this->npart = npart;
+            iter = 0;
             this->iter_max = iter_max;
             for (Int_t i=0; i<npart; i++){
                 particles[i] = new particle(conf);
